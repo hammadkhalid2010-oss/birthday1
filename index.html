@@ -12,6 +12,26 @@
         <p class="tag">Scannable Birthday Greeting</p>
         <h1 id="greeting">🎉 Happy Birthday! 🎂</h1>
         <p id="subtitle">Generate a QR code below to share this greeting with someone special.</p>
+
+        <div class="cake-wrap" aria-live="polite">
+          <p class="cake-instruction">Make a loud sound (or blow into your mic) to blow out the candles.</p>
+          <div class="cake" role="img" aria-label="Birthday cake with candles">
+            <div class="candles" id="candles">
+              <div class="candle"><span class="flame"></span></div>
+              <div class="candle"><span class="flame"></span></div>
+              <div class="candle"><span class="flame"></span></div>
+              <div class="candle"><span class="flame"></span></div>
+            </div>
+            <div class="icing"></div>
+            <div class="layer"></div>
+            <div class="plate"></div>
+          </div>
+          <div class="cake-actions">
+            <button id="micButton" type="button">Enable Mic Candles</button>
+            <button id="relightButton" type="button" class="secondary">Relight Candles</button>
+          </div>
+          <p id="cakeStatus" class="cake-status">Candles are lit ✨</p>
+        </div>
       </section>
 
       <section class="card builder-card">
